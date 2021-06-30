@@ -1,0 +1,36 @@
+@media (max-width: 1600px) { /* 1201 - 1600 */
+    .container{
+        max-width: 1201px;
+
+    }
+    .hero__img {
+        width: 103.4%;
+        top: -268px;
+    }
+    .svg-2 {
+        top: 204px;
+        left: 39px;
+        z-index: 1;
+    }
+    .about__desc {
+        padding: 0 96px
+    }
+}
+@media (max-width: 1200px) { /* 1025 - 1200 */
+    .container{
+        max-width: 1024px;
+    }
+
+}
+@media (max-width: 1024px) { /* 993 - 1024 */
+
+}
+@media (max-width: 992px) { /* 769 - 992 */
+
+}
+@media (max-width: 768px) { /* 481 - 768 */
+
+}
+@media (max-width: 480px) { /* 0 - 480 */
+
+}
