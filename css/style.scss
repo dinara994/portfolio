@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -62,6 +66,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+/*==================HEADER================*/
+
 .menu__link {
   font-weight: 600;
   font-size: 18px;
@@ -70,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   transition: .5s;
   position: relative;
+  z-index: 1;
 }
 
 .menu__link:not(:last-child) {
@@ -116,7 +123,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*==================HEADER=================*/
+/*===============HERO==================*/
+
 .max__width {
   display: flex;
   justify-content: space-between;
@@ -200,7 +208,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/*===============HERO==================*/
 /*=================PORTFOLIO================*/
 .portfolio {
   position: relative;
@@ -208,17 +215,22 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 
   &__container {
-    padding: 90px 0 250px;
+    padding: 90px 0 120px;
+    margin: auto;
   }
 
   &__title {
     font-weight: 700;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 40px;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 15px;
 
+  }
+
+  &__subtitle {
+    margin-bottom: 60px;
   }
 
   &__green {
@@ -227,7 +239,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .box {
-  top: 150px;
   height: 260px;
   overflow: hidden;
   position: relative;
@@ -277,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 .svg-2 {
   position: absolute;
   top: 250px;
-  left: -100px;
+  left: 0;
 }
 
 .svg-3 {
@@ -287,38 +298,270 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*=================SKILLS================*/
+.skills {
+  padding: 100px 0 90px;
+  color: white;
+  position: relative;
+  background: #00000080 url(../images/skills.jpeg) fixed no-repeat center/cover;
+  background-blend-mode: darken;
+}
+
+.skills {
+  text-align: center;
+  padding: 140px 0 140px;
+}
+
+.section__title {
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 56px;
+  text-align: center;
+  color: #050C26;
+  position: relative;
+}
+
+.section__title:before {
+  content: 'ABOUT US';
+  max-width: 346px;
+  font-size: 69px;
+  top: -38px;
+  left: 393px;
+  line-height: 120%;
+  text-align: center;
+  opacity: 0.05;
+  background: linear-gradient(180deg, #D93059 0%, rgba(217, 48, 89, 0) 100%);
+  position: absolute;
+}
+
+.section__subtitle {
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #575859;
+  font-weight: 400;
+  margin: 25px 0 70px;
+  padding: 0 160px;
+}
+
+.skills__container {
+  max-width: 1240px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-gap: 30px;
+}
+
+.skills__grid {
+
+  grid-template-columns: 1fr;
+
+}
+
+.skills__img {
+  background: url("../images/nano.JPG") no-repeat center/cover;
+  border-radius: 10px;
+  height: 600px;
+  max-width: 59%;
+}
+
+
+.skills__bar {
+  height: 15px;
+  border-radius: 1.50rem;
+  position: relative;
+}
+
+.skills__percentage {
+  height: 15px;
+  background-color: #E41A1A;
+  position: absolute;
+  left: 0;
+  border-radius: 2.50rem;
+}
+
+.skills__bar {
+  background: #e8bcbc;
+  margin: 35px 0 45px;
+}
+
+.skills__orange {
+  background-color: #DA5A12;
+}
+
+.skills__orange-opacity {
+  background-color: #e3b99f;
+}
+
+.skills__green {
+  background-color: #5BBB10;
+}
+
+.skills__green-opacity {
+  background-color: #bedea5;
+}
+
+.skills__blue {
+  background-color: #15C1CC;
+}
+
+.skills__blue-opacity {
+  background-color: #b1dbde;
+
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills__name {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  color: #fff3cd;
+}
+
+.skills__number {
+  position: relative;
+  top: 25px;
+}
+
+.skills__list {
+  row-gap: 1.5rem;
+
+}
+
+.skills__web {
+  width: 80%;
+}
+
+.skills__desing {
+  width: 90%;
+
+}
+
+.skills__graphic {
+  width: 75%;
+}
+
+.skills__photo {
+  width: 80%;
+}
+
+.skills-saly{
+  position: absolute;
+  max-width: 100%;
+  height: 300px;
+  bottom: -215px;
+  right: 416px;
+}
+/*=================ABOUT================*/
+.about {
+  padding: 150px 0 150px;
+  position: relative;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: #6de510;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 55px;
+    color: #0B132A;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 85px;
+    color: #4F5665;
+    margin-bottom: 5px;
+  }
+  &__subdesc{
+    color: #4F5665;
+
+  }
+  //&__svg{
+  //  position: absolute;
+  //  max-width: 100%;
+  //  height: 300px;
+  //  top: 0;
+  //  right: 318px;
+  //  z-index: 5;
+  //}
+  &__grid{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+
+}
+.icons{
+  margin-bottom: 20px;
+}
+
+.about-saly-1{
+  position: absolute;
+  max-width: 100%;
+  height: 300px;
+  bottom: 0;
+  left: 318px;
+  z-index: 5;
+}
+/*=================FOOTER================*/
+
+
 .footer {
   padding: 100px 0 90px;
   color: white;
   position: relative;
-  background: url(../images/footer.jpeg) no-repeat center/cover;
-  background-attachment: fixed;
-  background-color: rgba(0, 0, 0, .3);
+  background: #00000080 url(../images/footer.jpeg) fixed no-repeat center/cover;
+  background-blend-mode: darken;
 
-  &__blok{
+  &__link {
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    opacity: 0.8;
+  }
+
+
+  &__blok {
     display: flex;
     justify-content: space-around;
   }
 
+  &__menu-link li {
+    margin-bottom: 15px;
+  }
 
-  &__svg{
-    margin: 10px 0 30px;
+
+  &__svg {
+    margin-right: 25px;
   }
 }
-.menu__title{
+
+.menu__title {
   font-weight: 500;
   font-size: 20px;
   line-height: 160%;
   color: #FFFFFF;
   margin-bottom: 25px;
 }
-.link{
-  font-size: 16px;
-  line-height: 160%;
-  color: #FFFFFF;
-  margin-bottom: 15px;
-}
-.contacts{
+
+
+.contacts {
   font-weight: 500;
   font-size: 20px;
   line-height: 160%;
@@ -331,4 +574,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 62px;
   position: absolute;
 
+}
+
+.post {
+  margin: 10px 0 30px;
 }
