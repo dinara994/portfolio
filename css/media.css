@@ -22,5 +22,7 @@
     }
 }
 @media (max-width: 480px) { /* 0 - 480 */
-
+    .container{
+        max-width: 360px;
+    }
 }
