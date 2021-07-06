@@ -1,5 +1,11 @@
 @media (max-width: 1600px) { /* 1201 - 1600 */
-
+    .contacts {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 160%;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+    }
 }
 @media (max-width: 1200px) { /* 1025 - 1200 */
     .container{
@@ -9,6 +15,9 @@
 @media (max-width: 1024px) { /* 993 - 1024 */
     .container{
         max-width: 992px;
+    }
+    .skills-saly{
+        right: 316px;
     }
 }
 @media (max-width: 992px) { /* 769 - 992 */
