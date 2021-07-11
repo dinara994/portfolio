@@ -8,9 +8,7 @@
     }
 }
 @media (max-width: 1200px) { /* 1025 - 1200 */
-    .container{
-     max-width: 1024px;
-    }
+
 }
 @media (max-width: 1024px) { /* 993 - 1024 */
     .container{
