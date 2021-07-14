@@ -38,9 +38,7 @@
     .container{
         max-width: 480px;
     }
-    .contacts {
-        font-size: 16px;
-    }
+
 }
 @media (max-width: 480px) { /* 0 - 480 */
     .container{
