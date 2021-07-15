@@ -6,6 +6,9 @@
         color: #FFFFFF;
         margin-bottom: 25px;
     }
+    .skills-saly{
+        right: 316px;
+    }
 }
 @media (max-width: 1200px) { /* 1025 - 1200 */
     .container{
