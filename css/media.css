@@ -22,12 +22,15 @@
     .container{
         max-width: 992px;
     }
-
+    .skills-saly{
+        right: 316px;
+    }
 }
 @media (max-width: 992px) { /* 769 - 992 */
     .container{
         max-width: 768px;
     }
+
 }
 @media (max-width: 768px) { /* 481 - 768 */
     .container{
