@@ -38,7 +38,9 @@
     .container{
         max-width: 480px;
     }
-
+    .skills-saly{
+        right: 316px;
+    }
 }
 @media (max-width: 480px) { /* 0 - 480 */
     .container{
